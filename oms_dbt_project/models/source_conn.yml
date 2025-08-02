@@ -1,0 +1,11 @@
+sources:
+  - name: landing
+    database: RETAIL_SALES 
+    schema: L1_LANDING
+    tables:
+      - name: cust
+        identifier: customers
+      - name: order
+        identifier: orders
+      - name: orderitm
+        identifier: orderitems   

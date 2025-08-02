@@ -1,0 +1,4 @@
+SELECT 
+ORDERITEMID, ORDERID, PRODUCTID, QUANTITY, UNITPRICE, UPDATED_AT 
+FROM 
+{{ source('landing','orderitm') }}
