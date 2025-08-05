@@ -4,8 +4,26 @@ sources:
     schema: L1_LANDING
     tables:
       - name: cust
+        description: The customers table from order management system(OMS).
         identifier: customers
       - name: order
+        description: The orders table from order management system(OMS).  
         identifier: orders
       - name: orderitm
-        identifier: orderitems   
+        identifier: orderitems
+      - name: employees
+        identifier: employees
+        columns:
+          - name: address
+            description: Full Address of emplyees for Transport Arrangements.          
+            tests:
+              - not_null
+              - string_not_empty     
+  - name: training 
+    database: RETAIL_SALES 
+    schema: TRAINING
+    tables: 
+      - name: sales_india
+      - name: sales_us
+      - name: sales_uk
+

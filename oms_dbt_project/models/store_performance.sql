@@ -7,4 +7,4 @@ join {{ref("orderitem_stg")}} i
 on o.orderid =i.orderid 
 join {{ref("salestargets")}} s 
 on o.storeid=s.storeid
-group by o.storeid,s.salestarget;
+group by o.storeid,s.salestarget

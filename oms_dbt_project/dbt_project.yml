@@ -38,10 +38,14 @@ models:
       schema: L2_PROCESSING
     orderitem_stg:
       schema: L2_PROCESSING
+    employee_stg:
+      schema: L2_PROCESSING 
     orders_fact:
       materialized: table
       schema: L2_PROCESSING
     customer_revenue:
-      materialized: table  
+      materialized: table
+    # order_items_uniq:
+    #   materialized: table
     # example:
     #   +materialized: view
